@@ -209,24 +209,23 @@ extension PatientInformationVC: UIPickerViewDataSource, UIPickerViewDelegate{
     
     func createDatePicker(){
         birthDateTextField.textAlignment = .center
-        let toolbar = UIToolbar().ToolbarPiker(mySelect: #selector(PatientInformationVC.dismissPicker))
-        
-        //      let toolbar = UIToolbar()
+        let toolbar = UIToolbar()
+//            .ToolbarPiker(mySelect: #selector(PatientInformationVC.dismissPicker))
+
         toolbar.sizeToFit()
-        //
-        //        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
-        //        toolbar.setItems([doneBtn], animated: true)
+        
+                let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
+                toolbar.setItems([doneBtn], animated: true)
         birthDateTextField.inputAccessoryView = toolbar
         
         birthDateTextField.inputView = datePicker
         
         datePicker.datePickerMode = .date
-     
+        
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
-       formatter.timeStyle = .none
-    
-//        toolbar.barPosition.rawValue
+        formatter.timeStyle = .none
+        
         birthDateTextField.text = formatter.string(from: datePicker.date)
         
     }

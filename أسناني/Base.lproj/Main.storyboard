@@ -48,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8wk-gV-aT2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5699" y="396"/>
+            <point key="canvasLocation" x="5699" y="386"/>
         </scene>
         <!--Last Appointments List-->
         <scene sceneID="QJV-5i-3VG">
@@ -141,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fDo-8W-fg3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5699" y="1163"/>
+            <point key="canvasLocation" x="5429" y="1519"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nrO-AZ-TyK">
@@ -188,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJM-U3-Q1Y" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1228" y="-64"/>
+            <point key="canvasLocation" x="1228" y="-15"/>
         </scene>
         <!--Dentist Or PatientVC-->
         <scene sceneID="eNR-WM-60u">
@@ -229,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hb1-RV-V2H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2074" y="-64"/>
+            <point key="canvasLocation" x="2074" y="-15"/>
         </scene>
         <!--Dentist InformationVC-->
         <scene sceneID="5gM-aC-y7h">
@@ -245,6 +245,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QoZ-TP-cjt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3673.913043478261" y="-335.49107142857139"/>
+        </scene>
+        <!--Patient HistoryVC-->
+        <scene sceneID="Mlu-rm-ull">
+            <objects>
+                <viewController id="xqB-qJ-uXK" customClass="PatientHistoryVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cHe-2m-iKo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="HCk-DR-Jfa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="l9G-Dr-UtD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uif-J2-8eq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5429" y="-281"/>
         </scene>
         <!--InformationVC-->
         <scene sceneID="GLw-3i-q7L">
@@ -381,6 +397,7 @@
                                 <connections>
                                     <action selector="next:" destination="wlX-C7-var" eventType="touchUpInside" id="9EK-uc-Xhy"/>
                                     <action selector="next:" destination="gMY-6i-8Wi" eventType="touchUpInside" id="bJY-ai-mJY"/>
+                                    <segue destination="1bL-pD-68e" kind="modal" identifier="Next" id="sqH-pb-EOT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -398,7 +415,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OnC-k3-o84" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3674" y="396"/>
+            <point key="canvasLocation" x="3674" y="370"/>
         </scene>
         <!--Sign InVC-->
         <scene sceneID="So3-O9-i7w">
@@ -514,7 +531,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7P3-O7-qLN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4886" y="1208"/>
+            <point key="canvasLocation" x="4687" y="1132"/>
         </scene>
         <!--Dentist HomeVC-->
         <scene sceneID="YUG-L5-sT4">
@@ -552,7 +569,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HsM-MU-dJ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4886" y="-378"/>
+            <point key="canvasLocation" x="3768" y="-1067"/>
+        </scene>
+        <!--Patient FileVC-->
+        <scene sceneID="C1T-O2-TPe">
+            <objects>
+                <viewController id="fhm-0I-Qav" customClass="PatientFileVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yUI-Uh-6UE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="p8q-V8-eH0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KBB-S1-R4v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RYd-24-yKP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4457" y="-281"/>
         </scene>
         <!--Patient HomeVC-->
         <scene sceneID="80u-LP-0ge">
@@ -571,8 +604,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="ifTapped:" destination="1bL-pD-68e" eventType="touchUpInside" id="Q9i-SO-rwX"/>
-                                    <segue destination="Txz-KF-T62" kind="show" identifier="طوارئ" id="8xi-uc-UxJ"/>
+                                    <action selector="ifTapped:" destination="1bL-pD-68e" eventType="touchUpInside" id="4Zn-Lf-ShJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pev-5E-Q76">
@@ -580,8 +612,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="ifTapped:" destination="1bL-pD-68e" eventType="touchUpInside" id="uxo-4g-yrg"/>
-                                    <segue destination="5rl-82-Aii" kind="show" id="Ng3-0Z-lVK"/>
+                                    <action selector="ifTapped:" destination="1bL-pD-68e" eventType="touchUpInside" id="4yq-pk-K8j"/>
+                                    <segue destination="5rl-82-Aii" kind="show" identifier="aldana" id="Ng3-0Z-lVK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWr-gt-Cuv">
@@ -589,7 +621,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="ifTapped:" destination="1bL-pD-68e" eventType="touchUpInside" id="Jzw-TT-IHM"/>
+                                    <action selector="ifTapped:" destination="1bL-pD-68e" eventType="touchUpInside" id="Rjx-i0-OGn"/>
+                                    <segue destination="fhm-0I-Qav" kind="show" identifier="file" id="0vy-2S-L8n"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bb-RI-zlf">
@@ -597,8 +630,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="ifTapped:" destination="1bL-pD-68e" eventType="touchUpInside" id="qTG-CN-wlb"/>
-                                    <segue destination="Txz-KF-T62" kind="show" identifier="دكاترة" id="F0Y-PR-Rjz"/>
+                                    <action selector="ifTapped:" destination="1bL-pD-68e" eventType="touchUpInside" id="w8M-VT-QDy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w19-Ox-bdH">
@@ -606,21 +638,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="ifTapped:" destination="1bL-pD-68e" eventType="touchUpInside" id="o3f-7i-8pR"/>
+                                    <action selector="ifTapped:" destination="1bL-pD-68e" eventType="touchUpInside" id="IQV-5x-atI"/>
+                                    <segue destination="xqB-qJ-uXK" kind="show" identifier="history" id="gzS-SY-dli"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="K4P-bh-nHY"/>
                     </view>
+                    <connections>
+                        <segue destination="Txz-KF-T62" kind="show" identifier="emergency" id="4dH-1S-0me"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WMb-vu-KNn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4886" y="396"/>
+            <point key="canvasLocation" x="4687" y="386"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8xi-uc-UxJ"/>
+        <segue reference="sqH-pb-EOT"/>
         <segue reference="FX4-PI-fP9"/>
         <segue reference="vYT-A8-cyh"/>
         <segue reference="OKA-RH-z0S"/>
