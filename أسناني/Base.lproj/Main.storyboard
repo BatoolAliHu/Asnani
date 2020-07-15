@@ -29,15 +29,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="ifTappedAppointment:" destination="5rl-82-Aii" eventType="touchUpInside" id="i7x-bR-nzF"/>
+                                    <action selector="ifTapped:" destination="5rl-82-Aii" eventType="touchUpInside" id="Gog-ue-Nkd"/>
+                                    <segue destination="iuC-Af-qQo" kind="show" identifier="Next" id="bGc-da-6Wa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ceb-B3-JeC">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ceb-B3-JeC">
                                 <rect key="frame" x="87" y="505" width="245" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="ifTappedAppointment:" destination="5rl-82-Aii" eventType="touchUpInside" id="CWQ-H2-uYL"/>
+                                    <segue destination="TBd-zK-3kS" kind="show" identifier="Last" id="jov-3R-Emd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,61 +51,51 @@
             </objects>
             <point key="canvasLocation" x="5699" y="386"/>
         </scene>
-        <!--Last Appointments List-->
-        <scene sceneID="QJV-5i-3VG">
+        <!--Last Appointments ListVC-->
+        <scene sceneID="PcQ-vo-Et4">
             <objects>
-                <tableViewController id="Io4-Ed-Hll" customClass="LastAppointmentsList" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cbc-Ca-x5H">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="TBd-zK-3kS" customClass="LastAppointmentsListVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jAf-Fh-ici">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uaO-mN-oFc">
+                                <rect key="frame" x="68" y="65" width="278" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="138" id="4Lk-8L-hm2" customClass="cell1">
-                                <rect key="frame" x="0.0" y="28" width="414" height="138"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Lk-8L-hm2" id="Jql-dy-TJE">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Io4-Ed-Hll" id="9AO-EL-yVF"/>
-                            <outlet property="delegate" destination="Io4-Ed-Hll" id="vVS-Mc-Aca"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iw1-6G-F94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="MIj-7v-jIA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="quS-yr-fsE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="89l-Kl-ZWO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6479.7101449275369" y="80.357142857142847"/>
+            <point key="canvasLocation" x="6470" y="816"/>
         </scene>
         <!--Next Appointments List-->
-        <scene sceneID="0Ob-H6-F3d">
+        <scene sceneID="IFq-SE-f17">
             <objects>
-                <tableViewController id="47D-M8-Y7Q" customClass="NextAppointmentsList" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qZH-b4-EXO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="iuC-Af-qQo" customClass="NextAppointmentsList" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qyp-aQ-2NC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mQQ-TB-q2A">
+                                <rect key="frame" x="68" y="96" width="278" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="112" id="w6r-yc-RT3" customClass="cell2">
-                                <rect key="frame" x="0.0" y="28" width="414" height="112"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w6r-yc-RT3" id="RbY-Fs-jfR">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="47D-M8-Y7Q" id="Z5i-hl-ldR"/>
-                            <outlet property="delegate" destination="47D-M8-Y7Q" id="83m-yl-0xh"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NhC-c0-RgG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="egj-6l-EQh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hyq-PD-Zyz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lrq-gE-EdE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6479.7101449275369" y="787.5"/>
+            <point key="canvasLocation" x="6470" y="-35"/>
         </scene>
         <!--DentistsVC-->
         <scene sceneID="B3F-kc-z5C">
@@ -141,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fDo-8W-fg3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5429" y="1519"/>
+            <point key="canvasLocation" x="5429" y="1407"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nrO-AZ-TyK">
@@ -463,6 +454,21 @@
             </objects>
             <point key="canvasLocation" x="2074" y="856"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Zxi-zb-da4">
+            <objects>
+                <viewController id="zv9-1A-diU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4pg-6C-Kzw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hPs-5a-laW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1x-1a-pCE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3952" y="1622"/>
+        </scene>
         <!--EmergencyVC-->
         <scene sceneID="okq-sU-ih8">
             <objects>
@@ -480,7 +486,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="ifTapped2:" destination="Txz-KF-T62" eventType="touchUpInside" id="nUT-iA-Q7P"/>
+                                    <action selector="ifTapped:" destination="Txz-KF-T62" eventType="touchUpInside" id="Uhm-Eo-Moq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhU-kb-JuQ">
@@ -488,7 +494,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="ifTapped2:" destination="Txz-KF-T62" eventType="touchUpInside" id="Ait-NC-DqO"/>
+                                    <action selector="ifTapped:" destination="Txz-KF-T62" eventType="touchUpInside" id="i9z-Bb-Qms"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGG-tP-Z9V">
@@ -496,7 +502,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="ifTapped2:" destination="Txz-KF-T62" eventType="touchUpInside" id="aKP-fr-hen"/>
+                                    <action selector="ifTapped:" destination="Txz-KF-T62" eventType="touchUpInside" id="NHo-wQ-9fp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSR-XR-D3O">
@@ -504,7 +510,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="ifTapped2:" destination="Txz-KF-T62" eventType="touchUpInside" id="Ikw-dD-oFP"/>
+                                    <action selector="ifTapped:" destination="Txz-KF-T62" eventType="touchUpInside" id="jcj-XB-TNR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fq0-mW-IiK">
@@ -512,7 +518,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="ifTapped2:" destination="Txz-KF-T62" eventType="touchUpInside" id="hZf-ah-FXq"/>
+                                    <action selector="ifTapped:" destination="Txz-KF-T62" eventType="touchUpInside" id="fmi-Yu-P30"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87U-mz-cpE">
@@ -520,7 +526,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="ifTapped2:" destination="Txz-KF-T62" eventType="touchUpInside" id="96y-ih-Iif"/>
+                                    <action selector="ifTapped:" destination="Txz-KF-T62" eventType="touchUpInside" id="j4G-tt-qvZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -531,7 +537,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7P3-O7-qLN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4687" y="1132"/>
+            <point key="canvasLocation" x="4687" y="1081"/>
+        </scene>
+        <!--Patient Of The DentistVC-->
+        <scene sceneID="TDl-Jb-Fsp">
+            <objects>
+                <viewController id="Bda-tO-eNx" customClass="PatientOfTheDentistVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sbj-W6-1p4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="QDr-Cy-FjW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iI6-Rt-HiM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvW-aT-RlA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3076" y="-1673"/>
         </scene>
         <!--Dentist HomeVC-->
         <scene sceneID="YUG-L5-sT4">
@@ -550,15 +572,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="ifTaappedDentist:" destination="SKn-ta-a1B" eventType="touchUpInside" id="SxE-oU-CKg"/>
+                                    <action selector="ifTapped:" destination="SKn-ta-a1B" eventType="touchUpInside" id="cYt-2r-xXC"/>
+                                    <segue destination="quQ-WO-gU0" kind="show" identifier="schedule" id="8Vx-xQ-gLt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzg-fo-dOd">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzg-fo-dOd">
                                 <rect key="frame" x="78" y="501" width="263" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="ifTaappedDentist:" destination="SKn-ta-a1B" eventType="touchUpInside" id="T9r-H4-jw8"/>
+                                    <action selector="ifTapped:" destination="SKn-ta-a1B" eventType="touchUpInside" id="h04-LQ-8s6"/>
+                                    <segue destination="Bda-tO-eNx" kind="show" identifier="patient" id="Q0r-Gp-DCe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -569,7 +593,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HsM-MU-dJ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3768" y="-1067"/>
+            <point key="canvasLocation" x="3767" y="-1195"/>
+        </scene>
+        <!--ScheduleVC-->
+        <scene sceneID="kJi-GS-p3z">
+            <objects>
+                <viewController id="quQ-WO-gU0" customClass="ScheduleVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TXV-D2-vwg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="9DE-VQ-70P"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BIQ-Lp-eAi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U0z-o9-PBd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4545" y="-1563"/>
         </scene>
         <!--Patient FileVC-->
         <scene sceneID="C1T-O2-TPe">

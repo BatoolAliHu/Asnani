@@ -17,8 +17,15 @@ class EmergencyVC: UIViewController {
     }
     
 
-    @IBAction func ifTapped2(_ sender: Any) {
-    }
+   
+//    @IBAction func ifTapped(_ sender: UIButton) {
+//        switch <#value#> {
+//        case <#pattern#>:
+//            <#code#>
+//        default:
+//            <#code#>
+//        }
+//    }
     /*
     // MARK: - Navigation
 

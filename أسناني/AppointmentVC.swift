@@ -12,11 +12,20 @@ class AppointmentVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func ifTappedAppointment(_ sender: Any) {
+    
+    @IBAction func ifTapped(_ sender: UIButton) {
+        switch sender.tag {
+        case 0:
+            performSegue(withIdentifier: "Next", sender: nil)
+        case 1:
+            performSegue(withIdentifier: "Last", sender: nil)
+        default:
+            print("Data Not Found")
+            
     }
     
     /*
@@ -29,4 +38,5 @@ class AppointmentVC: UIViewController {
     }
     */
 
+}
 }

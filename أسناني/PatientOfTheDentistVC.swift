@@ -1,5 +1,5 @@
 //
-//  DentistHomeVC.swift
+//  PatientOfTheDentistVC.swift
 //  Asnani
 //
 //  Created by Batool Hussain on 7/15/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DentistHomeVC: UIViewController {
+class PatientOfTheDentistVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,18 +16,7 @@ class DentistHomeVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-   
-    @IBAction func ifTapped(_ sender: UIButton) {
-        switch sender.tag {
-        case 0:
-            performSegue(withIdentifier: "schedule", sender: nil)
-        case 1:
-            performSegue(withIdentifier: "patient", sender: nil)
-        default:
-            print("Data Not Found")
-        }
-    }
-    
+
     /*
     // MARK: - Navigation
 

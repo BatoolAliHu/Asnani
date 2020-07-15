@@ -14,8 +14,6 @@
 		590B677C24BE8C9E00EC1E0E /* DentistInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590B677B24BE8C9E00EC1E0E /* DentistInformationVC.swift */; };
 		590B677E24BE8DD600EC1E0E /* DentistsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590B677D24BE8DD600EC1E0E /* DentistsVC.swift */; };
 		590B678024BE8E3600EC1E0E /* AppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590B677F24BE8E3600EC1E0E /* AppointmentVC.swift */; };
-		590B678224BE8ED200EC1E0E /* LastAppointmentsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590B678124BE8ED200EC1E0E /* LastAppointmentsList.swift */; };
-		590B678424BE8EFE00EC1E0E /* NextAppointmentsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590B678324BE8EFE00EC1E0E /* NextAppointmentsList.swift */; };
 		590B678624BE8F6F00EC1E0E /* DentistOrPatientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590B678524BE8F6F00EC1E0E /* DentistOrPatientVC.swift */; };
 		591EC8AC24BA45EB00D2E952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591EC8AB24BA45EB00D2E952 /* AppDelegate.swift */; };
 		591EC8AE24BA45EB00D2E952 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591EC8AD24BA45EB00D2E952 /* SceneDelegate.swift */; };
@@ -31,6 +29,10 @@
 		59ED8C2D24BEB72700A5ED8C /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ED8C2C24BEB72700A5ED8C /* Patient.swift */; };
 		59F69B2624BF930F00D6FD1E /* PatientHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F69B2524BF930F00D6FD1E /* PatientHistoryVC.swift */; };
 		59F69B2824BF93FF00D6FD1E /* PatientFileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F69B2724BF93FF00D6FD1E /* PatientFileVC.swift */; };
+		59F69B2A24BF9DF100D6FD1E /* LastAppointmentsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F69B2924BF9DF100D6FD1E /* LastAppointmentsListVC.swift */; };
+		59F69B2C24BF9E0200D6FD1E /* NextAppointmentsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F69B2B24BF9E0200D6FD1E /* NextAppointmentsList.swift */; };
+		59F69B2E24BFA08300D6FD1E /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F69B2D24BFA08300D6FD1E /* ScheduleVC.swift */; };
+		59F69B3024BFA0D700D6FD1E /* PatientOfTheDentistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F69B2F24BFA0D700D6FD1E /* PatientOfTheDentistVC.swift */; };
 		59F86D8524BD44C50080641F /* InformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F86D8424BD44C50080641F /* InformationVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,8 +44,6 @@
 		590B677B24BE8C9E00EC1E0E /* DentistInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentistInformationVC.swift; sourceTree = SOURCE_ROOT; };
 		590B677D24BE8DD600EC1E0E /* DentistsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DentistsVC.swift; path = "أسناني/DentistsVC.swift"; sourceTree = SOURCE_ROOT; };
 		590B677F24BE8E3600EC1E0E /* AppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppointmentVC.swift; path = "أسناني/AppointmentVC.swift"; sourceTree = SOURCE_ROOT; };
-		590B678124BE8ED200EC1E0E /* LastAppointmentsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LastAppointmentsList.swift; path = "أسناني/LastAppointmentsList.swift"; sourceTree = SOURCE_ROOT; };
-		590B678324BE8EFE00EC1E0E /* NextAppointmentsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NextAppointmentsList.swift; path = "أسناني/NextAppointmentsList.swift"; sourceTree = SOURCE_ROOT; };
 		590B678524BE8F6F00EC1E0E /* DentistOrPatientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DentistOrPatientVC.swift; path = "أسناني/DentistOrPatientVC.swift"; sourceTree = SOURCE_ROOT; };
 		591EC8A824BA45EB00D2E952 /* Asnani.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asnani.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		591EC8AB24BA45EB00D2E952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +61,10 @@
 		59ED8C2C24BEB72700A5ED8C /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		59F69B2524BF930F00D6FD1E /* PatientHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PatientHistoryVC.swift; path = "أسناني/PatientHistoryVC.swift"; sourceTree = SOURCE_ROOT; };
 		59F69B2724BF93FF00D6FD1E /* PatientFileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PatientFileVC.swift; path = "أسناني/PatientFileVC.swift"; sourceTree = SOURCE_ROOT; };
+		59F69B2924BF9DF100D6FD1E /* LastAppointmentsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastAppointmentsListVC.swift; sourceTree = "<group>"; };
+		59F69B2B24BF9E0200D6FD1E /* NextAppointmentsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAppointmentsList.swift; sourceTree = "<group>"; };
+		59F69B2D24BFA08300D6FD1E /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScheduleVC.swift; path = "أسناني/ScheduleVC.swift"; sourceTree = SOURCE_ROOT; };
+		59F69B2F24BFA0D700D6FD1E /* PatientOfTheDentistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PatientOfTheDentistVC.swift; path = "أسناني/PatientOfTheDentistVC.swift"; sourceTree = SOURCE_ROOT; };
 		59F86D8424BD44C50080641F /* InformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InformationVC.swift; path = "أسناني/InformationVC.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -131,11 +135,13 @@
 		59DBC9E524BC96F100FD4A69 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				59F69B2F24BFA0D700D6FD1E /* PatientOfTheDentistVC.swift */,
+				59F69B2D24BFA08300D6FD1E /* ScheduleVC.swift */,
 				59F69B2724BF93FF00D6FD1E /* PatientFileVC.swift */,
 				59F69B2524BF930F00D6FD1E /* PatientHistoryVC.swift */,
 				590B678524BE8F6F00EC1E0E /* DentistOrPatientVC.swift */,
-				590B678324BE8EFE00EC1E0E /* NextAppointmentsList.swift */,
-				590B678124BE8ED200EC1E0E /* LastAppointmentsList.swift */,
+				59F69B2924BF9DF100D6FD1E /* LastAppointmentsListVC.swift */,
+				59F69B2B24BF9E0200D6FD1E /* NextAppointmentsList.swift */,
 				590B677F24BE8E3600EC1E0E /* AppointmentVC.swift */,
 				590B677D24BE8DD600EC1E0E /* DentistsVC.swift */,
 				590B677B24BE8C9E00EC1E0E /* DentistInformationVC.swift */,
@@ -223,21 +229,23 @@
 				591EC8B024BA45EB00D2E952 /* ViewController.swift in Sources */,
 				59F69B2824BF93FF00D6FD1E /* PatientFileVC.swift in Sources */,
 				59DBC9E424BC96D100FD4A69 /* PatientInformationVC.swift in Sources */,
-				590B678424BE8EFE00EC1E0E /* NextAppointmentsList.swift in Sources */,
+				59F69B3024BFA0D700D6FD1E /* PatientOfTheDentistVC.swift in Sources */,
 				590B677424BE89A600EC1E0E /* SignInVC.swift in Sources */,
 				59584FDB24BDCD1F00591B5E /* Governorate.swift in Sources */,
 				59584FDD24BDDB3C00591B5E /* DoneBtn.swift in Sources */,
 				591EC8AC24BA45EB00D2E952 /* AppDelegate.swift in Sources */,
-				590B678224BE8ED200EC1E0E /* LastAppointmentsList.swift in Sources */,
 				590B678024BE8E3600EC1E0E /* AppointmentVC.swift in Sources */,
 				59F86D8524BD44C50080641F /* InformationVC.swift in Sources */,
 				590B677E24BE8DD600EC1E0E /* DentistsVC.swift in Sources */,
 				590B677C24BE8C9E00EC1E0E /* DentistInformationVC.swift in Sources */,
 				591EC8AE24BA45EB00D2E952 /* SceneDelegate.swift in Sources */,
 				59ED8C2B24BEAFD800A5ED8C /* Dentist.swift in Sources */,
+				59F69B2E24BFA08300D6FD1E /* ScheduleVC.swift in Sources */,
 				59ED8C2D24BEB72700A5ED8C /* Patient.swift in Sources */,
+				59F69B2A24BF9DF100D6FD1E /* LastAppointmentsListVC.swift in Sources */,
 				590B677824BE8A3700EC1E0E /* EmergencyVC.swift in Sources */,
 				590B678624BE8F6F00EC1E0E /* DentistOrPatientVC.swift in Sources */,
+				59F69B2C24BF9E0200D6FD1E /* NextAppointmentsList.swift in Sources */,
 				59F69B2624BF930F00D6FD1E /* PatientHistoryVC.swift in Sources */,
 				590B677624BE89FF00EC1E0E /* PatientHomeVC.swift in Sources */,
 				590B677A24BE8C5A00EC1E0E /* DentistHomeVC.swift in Sources */,
