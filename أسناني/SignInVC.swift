@@ -1,30 +1,22 @@
 //
-//  InformationVC.swift
+//  SignInVC.swift
 //  Asnani
 //
-//  Created by Batool Hussain on 7/14/20.
+//  Created by Batool Hussain on 7/15/20.
 //  Copyright © 2020 Batool Hussain. All rights reserved.
 //
 
 import UIKit
 
-class InformationVC: UIViewController {
+class SignInVC: UIViewController {
 
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var idTextField: UITextField!
-    @IBOutlet weak var numberTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var password2TextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func next(_ sender: Any) {
-    }
-    
+
     /*
     // MARK: - Navigation
 
