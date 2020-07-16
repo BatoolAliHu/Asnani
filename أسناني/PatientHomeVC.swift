@@ -24,24 +24,36 @@ class PatientHomeVC: UIViewController {
             performSegue(withIdentifier: "file", sender: nil)
         case 2:
             performSegue(withIdentifier: "aldana", sender: nil)
-        case 3:
-            performSegue(withIdentifier: "emergency", sender: nil)
-        case 4:
-            performSegue(withIdentifier: "emergency", sender: nil)
         default:
             print("Data not found")
             
         }
     }
     
+    
+    @IBAction func ifTapped2(_ sender: UIButton) {
+        performSegue(withIdentifier: "emergency", sender: sender.tag)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if let tag = sender as? Int{
+            
+            
+            if let vc = segue.destination as? EmergencyVC {
+                vc.tag = tag
+            }
+        }
+    }
     /*
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
     */
 
 }
+
