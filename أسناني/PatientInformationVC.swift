@@ -11,20 +11,14 @@ import UIKit
 class PatientInformationVC: UIViewController {
     
     @IBOutlet weak var birthDateTextField: UITextField!
-    
     @IBOutlet weak var bloodTypeTextField: UITextField!
-    
-    
     @IBOutlet weak var genderTextField: UITextField!
-    
     @IBOutlet weak var governorateTextField: UITextField!
-    
     @IBOutlet weak var areaTextField: UITextField!
     
     
     
     let datePicker = UIDatePicker()
-    
     var bloodTypePickerView = UIPickerView()
     var genderPickerView = UIPickerView()
     var governoratePickerView = UIPickerView()
@@ -45,18 +39,20 @@ class PatientInformationVC: UIViewController {
         tags()
         areaPicker()
         
-        let toolBar = UIToolbar().ToolbarPiker(mySelect: #selector(PatientInformationVC.dismissPicker))
+        let toolBar: [UIToolbar] = [UIToolbar].init(repeating: UIToolbar().ToolbarPiker(mySelect: #selector(PatientInformationVC.dismissPicker)), count: 5)
         
-        birthDateTextField.inputAccessoryView = toolBar
-        bloodTypeTextField.inputAccessoryView = toolBar
-        genderTextField.inputAccessoryView = toolBar
-        governorateTextField.inputAccessoryView = toolBar
-        areaTextField.inputAccessoryView = toolBar
+        
+        birthDateTextField.inputAccessoryView = toolBar[0]
+        bloodTypeTextField.inputAccessoryView = toolBar[1]
+        genderTextField.inputAccessoryView = toolBar[2]
+        governorateTextField.inputAccessoryView = toolBar[3]
+        areaTextField.inputAccessoryView = toolBar[4]
         
         
     }
     
     func inputs(){
+        birthDateTextField.inputView = datePicker
         bloodTypeTextField.inputView = bloodTypePickerView
         genderTextField.inputView = genderPickerView
         governorateTextField.inputView = governoratePickerView
@@ -213,13 +209,14 @@ extension PatientInformationVC: UIPickerViewDataSource, UIPickerViewDelegate{
 //            .ToolbarPiker(mySelect: #selector(PatientInformationVC.dismissPicker))
 
         toolbar.sizeToFit()
-        
+        /*
                 let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
                 toolbar.setItems([doneBtn], animated: true)
         birthDateTextField.inputAccessoryView = toolbar
+ 
         
         birthDateTextField.inputView = datePicker
-        
+        */
         datePicker.datePickerMode = .date
         
         let formatter = DateFormatter()
