@@ -10,6 +10,8 @@ import UIKit
 
 class NextAppointmentsList: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
+    var details: Appointment!
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return 1
     }
