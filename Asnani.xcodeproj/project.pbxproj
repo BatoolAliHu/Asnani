@@ -24,6 +24,7 @@
 		59584FDB24BDCD1F00591B5E /* Governorate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59584FDA24BDCD1F00591B5E /* Governorate.swift */; };
 		59584FDD24BDDB3C00591B5E /* DoneBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59584FDC24BDDB3C00591B5E /* DoneBtn.swift */; };
 		598EE5DA24C0B71A00F417AE /* MapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598EE5D924C0B71A00F417AE /* MapsVC.swift */; };
+		598EE5DC24C0E3AA00F417AE /* AppointmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598EE5DB24C0E3AA00F417AE /* AppointmentCell.swift */; };
 		59DBC9E124BB918D00FD4A69 /* Lalezar-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59DBC9E024BB918D00FD4A69 /* Lalezar-Regular.ttf */; };
 		59DBC9E424BC96D100FD4A69 /* PatientInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DBC9E324BC96D100FD4A69 /* PatientInformationVC.swift */; };
 		59ED8C2B24BEAFD800A5ED8C /* Dentist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ED8C2A24BEAFD800A5ED8C /* Dentist.swift */; };
@@ -61,6 +62,7 @@
 		59584FDA24BDCD1F00591B5E /* Governorate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Governorate.swift; sourceTree = "<group>"; };
 		59584FDC24BDDB3C00591B5E /* DoneBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneBtn.swift; sourceTree = "<group>"; };
 		598EE5D924C0B71A00F417AE /* MapsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsVC.swift; sourceTree = SOURCE_ROOT; };
+		598EE5DB24C0E3AA00F417AE /* AppointmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppointmentCell.swift; path = "أسناني/Model/AppointmentCell.swift"; sourceTree = SOURCE_ROOT; };
 		59DBC9E024BB918D00FD4A69 /* Lalezar-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lalezar-Regular.ttf"; sourceTree = "<group>"; };
 		59DBC9E324BC96D100FD4A69 /* PatientInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientInformationVC.swift; sourceTree = "<group>"; };
 		59ED8C2A24BEAFD800A5ED8C /* Dentist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dentist.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		59DBC9E524BC96F100FD4A69 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				598EE5DB24C0E3AA00F417AE /* AppointmentCell.swift */,
 				598EE5D924C0B71A00F417AE /* MapsVC.swift */,
 				59F69B5524C0986F00D6FD1E /* MapsNameVC.swift */,
 				59F69B5124C0072A00D6FD1E /* AppointmentDetailsVC.swift */,
@@ -245,6 +248,7 @@
 				59F69B2824BF93FF00D6FD1E /* PatientFileVC.swift in Sources */,
 				59DBC9E424BC96D100FD4A69 /* PatientInformationVC.swift in Sources */,
 				59F69B5224C0072A00D6FD1E /* AppointmentDetailsVC.swift in Sources */,
+				598EE5DC24C0E3AA00F417AE /* AppointmentCell.swift in Sources */,
 				59F69B3024BFA0D700D6FD1E /* PatientOfTheDentistVC.swift in Sources */,
 				590B677424BE89A600EC1E0E /* SignInVC.swift in Sources */,
 				59584FDB24BDCD1F00591B5E /* Governorate.swift in Sources */,

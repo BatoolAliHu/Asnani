@@ -7,9 +7,11 @@
 //
 
 import UIKit
+var selectedAppointment: [Appointment] =
+    [ Appointment(Name: "", degreeTitle: "", date: "")]
 
 class AppointmentVC: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,26 +19,30 @@ class AppointmentVC: UIViewController {
     }
     
     
+    
     @IBAction func ifTapped(_ sender: UIButton) {
         switch sender.tag {
         case 0:
-            performSegue(withIdentifier: "Next", sender: nil)
+            selectedAppointment = nextAppintment
         case 1:
-            performSegue(withIdentifier: "Next", sender: nil)
+            selectedAppointment = lastAppintment
         default:
             print("Data Not Found")
-            
+            performSegue(withIdentifier: "Next", sender: nil)
+        }
+        
+        
+        
+        
+        // MARK: - Navigation
+        
+        // In a storyboard-based application, you will often want to do a little preparation before navigation
+        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            let vc = segue.destination as! NextAppointmentsList
+            // Get the new view controller using segue.destination.
+            // Pass the selected object to the new view controller.
+        }
+        
+        
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
 }

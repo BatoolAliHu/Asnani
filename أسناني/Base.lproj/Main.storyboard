@@ -29,13 +29,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="ifTapped:" destination="5rl-82-Aii" eventType="touchUpInside" id="Gog-ue-Nkd"/>
+                                    <action selector="ifTapped:" destination="5rl-82-Aii" eventType="touchUpInside" id="ptZ-gS-CqW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ceb-B3-JeC">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ceb-B3-JeC">
                                 <rect key="frame" x="87" y="484" width="245" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.34457940920000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="ifTapped:" destination="5rl-82-Aii" eventType="touchUpInside" id="pRM-k4-OUQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -67,7 +70,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="158" id="Q81-Ku-DJd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="158" id="Q81-Ku-DJd" customClass="AppointmentCell" customModule="Asnani" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="158"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q81-Ku-DJd" id="IYn-MK-pxy">
@@ -108,6 +111,11 @@
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="dateLabel" destination="Lem-k5-Pq5" id="Ggb-yb-eJg"/>
+                                            <outlet property="dateLable" destination="Lem-k5-Pq5" id="YTO-ap-KJe"/>
+                                            <outlet property="name1Lable" destination="ll1-vC-1ob" id="i9B-qK-TVr"/>
+                                            <outlet property="name2Lable" destination="K4T-JY-eV4" id="3xg-8l-to1"/>
+                                            <outlet property="nameLabel" destination="ll1-vC-1ob" id="nKZ-at-JIb"/>
                                             <segue destination="KH8-FF-zr4" kind="show" id="gmT-YP-lvf"/>
                                         </connections>
                                     </tableViewCell>
