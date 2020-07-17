@@ -39,7 +39,7 @@ class AppointmentVC: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! NextAppointmentsList
-        vc.details! = selectedAppointment[(sender as! Int)]
+        vc.details = selectedAppointment
         
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.

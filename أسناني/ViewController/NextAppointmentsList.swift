@@ -10,17 +10,19 @@ import UIKit
 
 class NextAppointmentsList: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-var details: Appointment!
+   
+    
+    var details: [Appointment]!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return 1
+        return details.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AppointmentCell
-    cell.name1Lable.text = selectedAppointment[indexPath.row].Name
-        cell.name2Lable.text = selectedAppointment[indexPath.row].degreeTitle
-        cell.dateLable.text = selectedAppointment[indexPath.row].date
+    cell.name1Lable.text = details[indexPath.row].Name
+        cell.name2Lable.text = details[indexPath.row].degreeTitle
+        cell.dateLable.text = details[indexPath.row].date
 
                // Configure the cell...
                cell.textLabel?.text = ""
@@ -35,7 +37,8 @@ var details: Appointment!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.delegate = self
+        tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
