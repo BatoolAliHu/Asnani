@@ -20,19 +20,19 @@ class NextAppointmentsList: UIViewController,UITableViewDelegate,UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AppointmentCell
-    cell.name1Lable.text = details[indexPath.row].Name
+        cell.name1Lable.text = details[indexPath.row].Name
         cell.name2Lable.text = details[indexPath.row].degreeTitle
         cell.dateLable.text = details[indexPath.row].date
-
-               // Configure the cell...
-               cell.textLabel?.text = ""
-               return cell
+        
+        // Configure the cell...
+        cell.textLabel?.text = ""
+        return cell
         
     }
     
-
+    
     @IBOutlet weak var tableView: UITableView!
-   
+    
     
     
     override func viewDidLoad() {
