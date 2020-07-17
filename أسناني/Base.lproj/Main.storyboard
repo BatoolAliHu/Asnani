@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wlX-C7-var">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wlX-C7-var">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -17,7 +17,7 @@
             <objects>
                 <viewController id="5rl-82-Aii" customClass="AppointmentVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Nx-DK-Y2J">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="zdu-fE-nmf">
@@ -58,7 +58,7 @@
             <objects>
                 <viewController id="iuC-Af-qQo" customClass="NextAppointmentsList" customModule="Asnani" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qyp-aQ-2NC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="خلفية - ازرق" translatesAutoresizingMaskIntoConstraints="NO" id="ToP-Uo-jUr">
@@ -141,7 +141,7 @@
             <objects>
                 <viewController id="KH8-FF-zr4" customClass="AppointmentDetailsVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="32u-ni-aP7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="11" translatesAutoresizingMaskIntoConstraints="NO" id="dfr-5a-b5e">
@@ -163,7 +163,7 @@
             <objects>
                 <viewController id="xmo-AW-ygE" customClass="DentistsVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hnV-Dd-yBT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Tt-Uu-cdL">
@@ -248,7 +248,7 @@
             <objects>
                 <viewController id="TJV-39-K0J" customClass="DentistOrPatientVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wVW-Ok-NnE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="Vx2-M6-llq">
@@ -304,7 +304,7 @@
             <objects>
                 <viewController id="xqB-qJ-uXK" customClass="PatientHistoryVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cHe-2m-iKo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="خلفية - ابيض" translatesAutoresizingMaskIntoConstraints="NO" id="K4D-4v-oM4">
@@ -326,7 +326,7 @@
             <objects>
                 <viewController id="l2g-86-CpC" customClass="InformationVC" customModule="Asnani" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2T3-yY-HKq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="LYf-Bq-fY8">
@@ -481,7 +481,7 @@
             <objects>
                 <viewController id="slJ-Jx-O6m" customClass="SignInVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XEv-eH-pXZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" ambiguous="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="fgD-EK-FQ6">
@@ -542,14 +542,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1x-1a-pCE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3517" y="2233"/>
+            <point key="canvasLocation" x="3365" y="2234"/>
         </scene>
         <!--Maps NameVC-->
         <scene sceneID="usc-sa-lb2">
             <objects>
                 <viewController id="rDE-5j-SUL" customClass="MapsNameVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nRS-2f-dXJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="Yfa-3L-YSh">
@@ -596,14 +596,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xuN-bR-dXx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4282.608695652174" y="1819.4196428571427"/>
+            <point key="canvasLocation" x="4139" y="1829"/>
         </scene>
         <!--EmergencyVC-->
         <scene sceneID="okq-sU-ih8">
             <objects>
                 <viewController id="Txz-KF-T62" customClass="EmergencyVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nsT-l3-Zir">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="Nan-9d-M8V">
@@ -677,7 +677,7 @@
             <objects>
                 <viewController id="Bda-tO-eNx" customClass="PatientOfTheDentistVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sbj-W6-1p4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="QDr-Cy-FjW"/>
@@ -733,7 +733,7 @@
             <objects>
                 <viewController id="quQ-WO-gU0" customClass="ScheduleVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TXV-D2-vwg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="9DE-VQ-70P"/>
@@ -749,7 +749,7 @@
             <objects>
                 <viewController id="fhm-0I-Qav" customClass="PatientFileVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yUI-Uh-6UE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="p8q-V8-eH0"/>
@@ -765,7 +765,7 @@
             <objects>
                 <viewController id="1bL-pD-68e" customClass="PatientHomeVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IYd-GC-AbN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="fyh-fL-oOB">
@@ -904,11 +904,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ti4-1m-nTm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6120" y="1829"/>
+            <point key="canvasLocation" x="6049" y="1829"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sqH-pb-EOT"/>
+        <segue reference="JuM-uG-TaC"/>
         <segue reference="FX4-PI-fP9"/>
         <segue reference="vYT-A8-cyh"/>
         <segue reference="OKA-RH-z0S"/>

@@ -10,14 +10,17 @@ import UIKit
 
 class NextAppointmentsList: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    var details: Appointment!
+var details: Appointment!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AppointmentCell
+    cell.name1Lable.text = selectedAppointment[indexPath.row].Name
+        cell.name2Lable.text = selectedAppointment[indexPath.row].degreeTitle
+        cell.dateLable.text = selectedAppointment[indexPath.row].date
 
                // Configure the cell...
                cell.textLabel?.text = ""
