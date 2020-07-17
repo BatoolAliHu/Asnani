@@ -8,14 +8,14 @@
 
 import UIKit
 
-class PatientInformationVC: UIViewController {
+class PatientInformationVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var birthDateTextField: UITextField!
     @IBOutlet weak var bloodTypeTextField: UITextField!
     @IBOutlet weak var genderTextField: UITextField!
     @IBOutlet weak var governorateTextField: UITextField!
     @IBOutlet weak var areaTextField: UITextField!
-    
+   
     
     
     let datePicker = UIDatePicker()
@@ -25,38 +25,26 @@ class PatientInformationVC: UIViewController {
     var areaPickerView = UIPickerView()
     
     
-    
-    
-    
     override func viewDidLoad() {
-        
-        createDatePicker()
+     
         super.viewDidLoad()
-        inputs()
+        
         placeholders()
         aignments()
-        delegate()
         tags()
+        
+        
+   
+       
+        delegate()
+
+        inputs()
+        
+        //create DatePicker
+        createDatePicker()
+        
+        //you need to do it
         areaPicker()
-        
-        let toolBar: [UIToolbar] = [UIToolbar].init(repeating: UIToolbar().ToolbarPiker(mySelect: #selector(PatientInformationVC.dismissPicker)), count: 5)
-        
-        
-        birthDateTextField.inputAccessoryView = toolBar[0]
-        bloodTypeTextField.inputAccessoryView = toolBar[1]
-        genderTextField.inputAccessoryView = toolBar[2]
-        governorateTextField.inputAccessoryView = toolBar[3]
-        areaTextField.inputAccessoryView = toolBar[4]
-        
-        
-    }
-    
-    func inputs(){
-        birthDateTextField.inputView = datePicker
-        bloodTypeTextField.inputView = bloodTypePickerView
-        genderTextField.inputView = genderPickerView
-        governorateTextField.inputView = governoratePickerView
-        areaTextField.inputView = areaPickerView
         
     }
     
@@ -74,6 +62,14 @@ class PatientInformationVC: UIViewController {
         areaTextField.textAlignment =  .center
     }
     
+    func tags(){
+        bloodTypePickerView.tag = 1
+        genderPickerView.tag = 2
+        governoratePickerView.tag = 3
+        areaPickerView.tag = 4
+    }
+
+    
     func delegate() {
         bloodTypePickerView.delegate = self
         bloodTypePickerView.dataSource = self
@@ -85,17 +81,57 @@ class PatientInformationVC: UIViewController {
         areaPickerView.dataSource = self
     }
     
-    func tags(){
-        bloodTypePickerView.tag = 1
-        genderPickerView.tag = 2
-        governoratePickerView.tag = 3
-        areaPickerView.tag = 4
+    func inputs(){
+        birthDateTextField.inputView = datePicker
+        bloodTypeTextField.inputView = bloodTypePickerView
+        genderTextField.inputView = genderPickerView
+        governorateTextField.inputView = governoratePickerView
+        areaTextField.inputView = areaPickerView
+    }
+    
+    
+
+    func createDatePicker(){
+        
+        
+        datePicker.datePickerMode = .date
+        
+      
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+       
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(self.donePressed))
+        toolbar.setItems([doneBtn], animated: true)
+        // toolbar.isUserInteractionEnabled = true
+        
+     
+        birthDateTextField.inputAccessoryView = toolbar
+        
+        //assign date picker to the text field
+        birthDateTextField.inputView = datePicker
+        
+    }
+    
+    @objc func donePressed(){
+        
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        
+        self.birthDateTextField.text = formatter.string(from: datePicker.date)
+        
+        //  birthDateTextField.text = "\(datePicker.date)"
+        self.view.endEditing(true)
+        self.birthDateTextField.resignFirstResponder()
     }
     
     
     func areaPicker(){
         let area = [ governoratePickerView : "حولي" , areaPickerView : hawaliArray] as [UIPickerView : Any]
     }
+    
+ 
     
     @IBAction func next(_ sender: UIButton) {
         if
@@ -135,7 +171,8 @@ class PatientInformationVC: UIViewController {
     }
     
 }
-var selectedDate = ""
+
+
 
 extension PatientInformationVC: UIPickerViewDataSource, UIPickerViewDelegate{
     
@@ -151,7 +188,6 @@ extension PatientInformationVC: UIPickerViewDataSource, UIPickerViewDelegate{
             return gender.count
         case 3:
             return governorate.count
-            
         default:
             return 1
         }
@@ -175,26 +211,30 @@ extension PatientInformationVC: UIPickerViewDataSource, UIPickerViewDelegate{
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
         
-        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(self.donePressed))
         toolbar.setItems([doneBtn], animated: true)
-        //           bloodTypeTextField.inputAccessoryView = toolbar
         
         switch pickerView.tag {
         case 1:
             bloodTypeTextField.text = bloodType[row]
-            //            bloodTypeTextField.resignFirstResponder()
             bloodTypeTextField.inputAccessoryView = toolbar
+            
+            //bloodTypeTextField.resignFirstResponder()
+            
         case 2:
             genderTextField.text = gender[row]
-            //            genderTextField.resignFirstResponder()
             genderTextField.inputAccessoryView = toolbar
+            
+        //genderTextField.resignFirstResponder()
         case 3:
             governorateTextField.text = governorate[row]
-            //            governorateTextField.resignFirstResponder()
             governorateTextField.inputAccessoryView = toolbar
             
+            //governorateTextField.resignFirstResponder()
+            
+            
             if row == 1 {
-//                areaPickerView == hawaliArray.
+                //areaPickerView == hawaliArray.
             }
             
         default:
@@ -202,56 +242,11 @@ extension PatientInformationVC: UIPickerViewDataSource, UIPickerViewDelegate{
         }
     }
     
-    
-    func createDatePicker(){
-        birthDateTextField.textAlignment = .center
-        let toolbar = UIToolbar()
-//            .ToolbarPiker(mySelect: #selector(PatientInformationVC.dismissPicker))
-
-        toolbar.sizeToFit()
-        /*
-                let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
-                toolbar.setItems([doneBtn], animated: true)
-        birthDateTextField.inputAccessoryView = toolbar
- 
-        
-        birthDateTextField.inputView = datePicker
-        */
-        datePicker.datePickerMode = .date
-        
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
-        
-        birthDateTextField.text = formatter.string(from: datePicker.date)
-        
-    }
-    
-    @objc func donePressed(){
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
-        
-        birthDateTextField.text = formatter.string(from: datePicker.date)
-        self.view.endEditing(true)
-        
-    }
-    
-    //        func doneBtn() {
-    //          let toolbar = UIToolbar()
-    //          toolbar.sizeToFit()
-    //            let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
-    //            toolbar.setItems([doneBtn], animated: true)
-    //            bloodTypeTextField.inputAccessoryView = toolbar
-    //            genderTextField.inputAccessoryView = toolbar
-    //            governorateTextField.inputAccessoryView = toolbar
-    //            areaTextField.inputAccessoryView = toolbar
-    //
-    //        }
-    //
 }
 
+
 extension String {
+    
     static func popAlert(presenter: UIViewController, Title: String , message: String, when: Double = 0 ,firsthandler: @escaping (UIAlertAction) -> (Void) = {_ in } , secondhandler: @escaping () -> (Void) = { })
     {
         let alertController = UIAlertController(title: Title, message: message, preferredStyle: .alert)
@@ -266,6 +261,8 @@ extension String {
         }
     }
 }
+
+
 
 
 
