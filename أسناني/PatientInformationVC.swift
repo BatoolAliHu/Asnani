@@ -26,10 +26,13 @@ class PatientInformationVC: UIViewController, UITextFieldDelegate {
     
     
     let governentDic = [governorate[0] : hawaliArray,
-    governorate[1] : capitalArray,
-    governorate[2] : jahraArray,
-    governorate[3] : hawaliArray,
-    governorate[4] : hawaliArray,]
+    governorate[1] : hawaliArray,
+    governorate[2] : capitalArray,
+    governorate[3] : jahraArray,
+    governorate[4] : mubarakAlkabeerArray,
+    governorate[5] : farwaniyaArray,
+    governorate[6] : ahmadiArray,
+    ]
     
     
     override func viewDidLoad() {
@@ -157,7 +160,7 @@ class PatientInformationVC: UIViewController, UITextFieldDelegate {
         let area = [ governoratePickerView : "حولي" , areaPickerView : hawaliArray] as [UIPickerView : Any]
     }
     
- 
+    
     
     @IBAction func next(_ sender: UIButton) {
         if
@@ -165,8 +168,7 @@ class PatientInformationVC: UIViewController, UITextFieldDelegate {
                 bloodTypeTextField.text == "" ||
                 genderTextField.text == "" ||
                 governorateTextField.text == ""
-            //                ||
-            //                areaTextField.text == ""
+                || areaTextField.text == ""
         {
             
             let alertControllar = UIAlertController(title: nil, message: "أكمل البيانات المطلوبة", preferredStyle: .alert)
