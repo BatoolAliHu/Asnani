@@ -22,6 +22,8 @@ class MapsNameVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        print(name2,name1)
+        map1.setTitle(hospital[0], for: .normal)
+        map2.setTitle(hospital[1], for: .normal)
         
         
         // Do any additional setup after loading the view.

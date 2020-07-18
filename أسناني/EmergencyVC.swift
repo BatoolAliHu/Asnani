@@ -9,7 +9,7 @@
 import UIKit
 
 class EmergencyVC: UIViewController {
-
+    
     var tag: Int = 0 // map or hospitals (3/4)
     var hospital: [String] = []
     let segues = [
@@ -17,18 +17,34 @@ class EmergencyVC: UIViewController {
         4: "hospital"
     ]
     
-      let emergencyHospitals = [
-        "Hawali" : [
+    let emergencyHospitals = [
+        0 : [
             "Mubarak",
             "Mubarak extension"
         ],
-        "Alahmdi" : [
+        1 : [
             "Adan",
+            "Adan extension"
+        ],
+        2 : [
+            "Ahmadi",
+            "Ahmadi extension"
+        ],
+        3 : [
+            "Other  Hospital",
+            "Adan extension"
+        ],
+        4 : [
+            "Ahmadi",
+            "Ahmadi extension"
+        ],
+        5 : [
+            "Other  Hospital",
             "Adan extension"
         ],
         
     ]
-     
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,20 +61,20 @@ class EmergencyVC: UIViewController {
     @IBAction func ifTapped(_ sender: UIButton) {
         if tag == 3{
             /*
-            switch sender.tag {
-            case 0:
-                hospital = ["الاحقاقي","حمد الصقر"]
-            case 1:
-                hospital = ["محمود حيدر","مبارك"]
-            case 2:
-                hospital = ["hgrndk","hgrwmn"]
-            default:
+             switch sender.tag {
+             case 0:
+             hospital = ["الاحقاقي","حمد الصقر"]
+             case 1:
+             hospital = ["محمود حيدر","مبارك"]
+             case 2:
+             hospital = ["hgrndk","hgrwmn"]
+             default:
              break
              }
              */
-//            hospital = emergencyHospitals[sender.titleLabe!.text!]!
-//            performSegue(withIdentifier: "map", sender: nil)
-           
+            hospital = emergencyHospitals[sender.tag]!
+            performSegue(withIdentifier: "map", sender: nil)
+            
             
         }
         let segueName = segues[tag]
@@ -72,14 +88,14 @@ class EmergencyVC: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "map"{
-        let vc = segue.destination as! MapsNameVC
-    
-
+            let vc = segue.destination as! MapsNameVC
+            vc.hospital = hospital
+            
+        }
+        
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
     
- // Get the new view controller using segue.destination.
- // Pass the selected object to the new view controller.
- }
-
 }
 
