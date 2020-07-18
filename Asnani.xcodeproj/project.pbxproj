@@ -33,7 +33,6 @@
 		59ED8C2D24BEB72700A5ED8C /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ED8C2C24BEB72700A5ED8C /* Patient.swift */; };
 		59F69B2624BF930F00D6FD1E /* PatientHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F69B2524BF930F00D6FD1E /* PatientHistoryVC.swift */; };
 		59F69B2824BF93FF00D6FD1E /* PatientFileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F69B2724BF93FF00D6FD1E /* PatientFileVC.swift */; };
-		59F69B2A24BF9DF100D6FD1E /* LastAppointmentsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F69B2924BF9DF100D6FD1E /* LastAppointmentsListVC.swift */; };
 		59F69B2C24BF9E0200D6FD1E /* NextAppointmentsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F69B2B24BF9E0200D6FD1E /* NextAppointmentsList.swift */; };
 		59F69B2E24BFA08300D6FD1E /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F69B2D24BFA08300D6FD1E /* ScheduleVC.swift */; };
 		59F69B3024BFA0D700D6FD1E /* PatientOfTheDentistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F69B2F24BFA0D700D6FD1E /* PatientOfTheDentistVC.swift */; };
@@ -72,7 +71,6 @@
 		59ED8C2C24BEB72700A5ED8C /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		59F69B2524BF930F00D6FD1E /* PatientHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PatientHistoryVC.swift; path = "أسناني/PatientHistoryVC.swift"; sourceTree = SOURCE_ROOT; };
 		59F69B2724BF93FF00D6FD1E /* PatientFileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PatientFileVC.swift; path = "أسناني/PatientFileVC.swift"; sourceTree = SOURCE_ROOT; };
-		59F69B2924BF9DF100D6FD1E /* LastAppointmentsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastAppointmentsListVC.swift; sourceTree = "<group>"; };
 		59F69B2B24BF9E0200D6FD1E /* NextAppointmentsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAppointmentsList.swift; sourceTree = "<group>"; };
 		59F69B2D24BFA08300D6FD1E /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScheduleVC.swift; path = "أسناني/ScheduleVC.swift"; sourceTree = SOURCE_ROOT; };
 		59F69B2F24BFA0D700D6FD1E /* PatientOfTheDentistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PatientOfTheDentistVC.swift; path = "أسناني/PatientOfTheDentistVC.swift"; sourceTree = SOURCE_ROOT; };
@@ -161,7 +159,6 @@
 				59F69B2724BF93FF00D6FD1E /* PatientFileVC.swift */,
 				59F69B2524BF930F00D6FD1E /* PatientHistoryVC.swift */,
 				590B678524BE8F6F00EC1E0E /* DentistOrPatientVC.swift */,
-				59F69B2924BF9DF100D6FD1E /* LastAppointmentsListVC.swift */,
 				59F69B2B24BF9E0200D6FD1E /* NextAppointmentsList.swift */,
 				590B677F24BE8E3600EC1E0E /* AppointmentVC.swift */,
 				590B677D24BE8DD600EC1E0E /* DentistsVC.swift */,
@@ -267,7 +264,6 @@
 				59ED8C2B24BEAFD800A5ED8C /* Dentist.swift in Sources */,
 				59F69B2E24BFA08300D6FD1E /* ScheduleVC.swift in Sources */,
 				59ED8C2D24BEB72700A5ED8C /* Patient.swift in Sources */,
-				59F69B2A24BF9DF100D6FD1E /* LastAppointmentsListVC.swift in Sources */,
 				5954C15C24C232DF00F0C488 /* ChoiceDentistCV.swift in Sources */,
 				59F69B5624C0986F00D6FD1E /* MapsNameVC.swift in Sources */,
 				590B677824BE8A3700EC1E0E /* EmergencyVC.swift in Sources */,
