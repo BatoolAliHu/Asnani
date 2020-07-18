@@ -27,9 +27,8 @@ var dentistData : [Dentist] = [
             hospital: "مستشفى الأميري", building: "١", clinc: "٣",
             extensionNumber: "١٠٣",
             cV: """
-- University of Manchester BDS.
-\n
-- University College London Eastman dental Institute RCSED/RCSI
+1- University of Manchester BDS.
+2- University College London Eastman dental Institute RCSED/RCSI
 """),
     
     Dentist(name: "د.احمد كمال", isSpecialized: true,
@@ -38,9 +37,8 @@ var dentistData : [Dentist] = [
             building: "٢", clinc: "٥",
             extensionNumber:"١٠٢",
             cV: """
-  - اختصاصي علاج وتجميل اللثة و زراعة الأسنان -
-  \n
- - البورد الأمريكي العام والتخصصي - ماجستير في الصحة العامة
+ ١- اختصاصي علاج وتجميل اللثة و زراعة الأسنان
+ ٢- البورد الأمريكي العام والتخصصي - ماجستير في الصحة العامة
  """
     ) ]
 
@@ -48,10 +46,10 @@ var dentistData1 : [Dentist] = [
     Dentist(name: "د.أبيار علي",
             isSpecialized: false,
             degreeTitle: "طبيب أسنان مساعد مسجل",
-        hospital: "مستوصف بيان",
+            hospital: "مستوصف بيان",
             building: "١", clinc: "٣",
             extensionNumber: "١٥",
-            cV: "بكلريوس طب وجراحة الأسنان - الجامعة الأردنية"),
+            cV: "بكلريوس طب وجراحة الأسنان"),
     
     Dentist(name: "د.موسى الزنكي",
             isSpecialized: false,
@@ -74,8 +72,8 @@ var dentistData1 : [Dentist] = [
             degreeTitle: "طبيب أسنان مساعد مسجل",
             hospital: "مستوصف بيان",
             building: "١", clinc: "٣",
-    extensionNumber: "١٦",
-    cV: "بكلريوس طب وجراحة الأسنان")
+            extensionNumber: "١٦",
+            cV: "بكلريوس طب وجراحة الأسنان")
     
     
 ]

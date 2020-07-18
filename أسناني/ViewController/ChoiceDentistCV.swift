@@ -11,10 +11,10 @@ import UIKit
 class ChoiceDentistCV: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     var details: [Dentist]!
- 
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return details.count    }
- 
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DentistCell
         cell.name1.text = details[indexPath.row].name
@@ -23,7 +23,7 @@ class ChoiceDentistCV: UIViewController,UITableViewDelegate,UITableViewDataSourc
         cell.name4.text = details[indexPath.row].building
         cell.name5.text = details[indexPath.row].clinc
         cell.name6.text = details[indexPath.row].extensionNumber
-//        cell.name7.text = details[indexPath.row].cV
+        cell.name7.text = details[indexPath.row].cV
         
         return cell
         
@@ -36,7 +36,7 @@ class ChoiceDentistCV: UIViewController,UITableViewDelegate,UITableViewDataSourc
     override func viewDidLoad() {
         super.viewDidLoad()
         print(details)
-//tableView.dataSourse = self
+        //tableView.dataSourse = self
         // Do any additional setup after loading the view.
     }
     

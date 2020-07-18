@@ -21,8 +21,7 @@ class DentistCell: UITableViewCell {
     
     @IBOutlet weak var name6: UILabel!
     
-    
-    @IBOutlet weak var name7: UILabel!
+    @IBOutlet weak var name7: UITextView!
     
     
     override func setSelected(_ selected: Bool, animated: Bool) {
