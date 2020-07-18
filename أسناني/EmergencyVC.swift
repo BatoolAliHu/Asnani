@@ -19,28 +19,28 @@ class EmergencyVC: UIViewController {
     
     let emergencyHospitals = [
         0 : [
-            "Mubarak",
-            "Mubarak extension"
+            "مركز الإحقاقي",
+            "مركز حمد الصقر"
         ],
         1 : [
-            "Adan",
-            "Adan extension"
+            "مركز الفحيحيل التخصصي",
+            "مركز القرين التخصصي"
         ],
         2 : [
-            "Ahmadi",
-            "Ahmadi extension"
+            "مركز السالمية الغربي",
+            "مركز محمود حاجي حيدر"
         ],
         3 : [
-            "Other  Hospital",
-            "Adan extension"
+            "مركز القصر",
+            "مركز الصليبية الجنوبي"
         ],
         4 : [
-            "Ahmadi",
-            "Ahmadi extension"
+            "مركز الرقة",
+            "مركز عبدالله المبارك"
         ],
         5 : [
-            "Other  Hospital",
-            "Adan extension"
+            "مركز عبدالله مبارك",
+            "مركز الفروانية الغربي"
         ],
         
     ]
