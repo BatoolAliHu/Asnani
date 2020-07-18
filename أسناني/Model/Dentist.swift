@@ -26,7 +26,11 @@ var dentistData : [Dentist] = [
             degreeTitle: "استشاري تركيبات وزراعة وتجميل الأسنان",
             hospital: "مستشفى الأميري", building: "المبنى: ١", clinc: "العيادة: ٣",
             extensionNumber: "الرقم الداخلي للعيادة: ١٠٣",
-            cV: "University of Manchester BDS - University College London Eastman dental Institute RCSED/RCSI"),
+            cV: """
+University of Manchester BDS.
+\n
+ University College London Eastman dental Institute RCSED/RCSI
+"""),
     
     Dentist(name: "د.احمد كمال", isSpecialized: true,
             degreeTitle: "إختصاصي علاج وتجميل اللثة وزراعة الأسنان",

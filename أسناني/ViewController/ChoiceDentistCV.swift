@@ -23,7 +23,7 @@ class ChoiceDentistCV: UIViewController,UITableViewDelegate,UITableViewDataSourc
         cell.name4.text = details[indexPath.row].building
         cell.name5.text = details[indexPath.row].clinc
         cell.name6.text = details[indexPath.row].extensionNumber
-        cell.name7.text = details[indexPath.row].cV
+//        cell.name7.text = details[indexPath.row].cV
         
         return cell
         
