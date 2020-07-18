@@ -27,8 +27,8 @@ var dentistData : [Dentist] = [
             hospital: "مستشفى الأميري", building: "١", clinc: "٣",
             extensionNumber: "١٠٣",
             cV: """
-1- University of Manchester BDS.
-2- University College London Eastman dental Institute RCSED/RCSI
+ » University of Manchester BDS.
+» University College London Eastman dental Institute RCSED/RCSI.
 """),
     
     Dentist(name: "د.احمد كمال", isSpecialized: true,
@@ -37,27 +37,27 @@ var dentistData : [Dentist] = [
             building: "٢", clinc: "٥",
             extensionNumber:"١٠٢",
             cV: """
- ١- اختصاصي علاج وتجميل اللثة و زراعة الأسنان
- ٢- البورد الأمريكي العام والتخصصي - ماجستير في الصحة العامة
+ » اختصاصي علاج وتجميل اللثة و زراعة الأسنان.
+ » البورد الأمريكي العام والتخصصي - ماجستير في الصحة العامة.
  """
     ) ]
 
 var dentistData1 : [Dentist] = [
     Dentist(name: "د.أبيار علي",
-            isSpecialized: false,
+                isSpecialized: false,
             degreeTitle: "طبيب أسنان مساعد مسجل",
             hospital: "مستوصف بيان",
             building: "١", clinc: "٣",
             extensionNumber: "١٥",
-            cV: "بكلريوس طب وجراحة الأسنان"),
+            cV: "بكالريوس طب وجراحة الأسنان "),
     
-    Dentist(name: "د.موسى الزنكي",
+    Dentist(name: "د.موسى زنكي",
             isSpecialized: false,
             degreeTitle: "طبيب أسنان مساعد مسجل",
             hospital: "مستوصف بيان",
             building: "١", clinc: "٤",
             extensionNumber: "٣٥",
-            cV: "بكلريوس طب وجراحة الأسنان"),
+            cV: "بكالريوس طب وجراحة الأسنان"),
     
     Dentist(name: "د.روان البناي",
             isSpecialized: false,
@@ -65,7 +65,7 @@ var dentistData1 : [Dentist] = [
             hospital: "مستوصف بيان",
             building: "١", clinc: "٥",
             extensionNumber: "٩٩",
-            cV: "بكلريوس طب وجراحة الأسنان"),
+            cV: "بكالريوس طب وجراحة الأسنان"),
     
     Dentist(name: "د. رقية زمان",
             isSpecialized: false,
@@ -73,7 +73,7 @@ var dentistData1 : [Dentist] = [
             hospital: "مستوصف بيان",
             building: "١", clinc: "٣",
             extensionNumber: "١٦",
-            cV: "بكلريوس طب وجراحة الأسنان")
+            cV: "بكالريوس طب وجراحة الأسناس")
     
     
 ]
