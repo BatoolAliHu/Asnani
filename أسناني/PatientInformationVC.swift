@@ -25,8 +25,15 @@ class PatientInformationVC: UIViewController, UITextFieldDelegate {
     var areaPickerView = UIPickerView()
     
     
+    let governentDic = [governorate[0] : hawaliArray,
+    governorate[1] : capitalArray,
+    governorate[2] : jahraArray,
+    governorate[3] : hawaliArray,
+    governorate[4] : hawaliArray,]
+    
+    
     override func viewDidLoad() {
-     
+        
         super.viewDidLoad()
         
         placeholders()
@@ -87,6 +94,8 @@ class PatientInformationVC: UIViewController, UITextFieldDelegate {
         genderTextField.inputView = genderPickerView
         governorateTextField.inputView = governoratePickerView
         areaTextField.inputView = areaPickerView
+        
+        
     }
     
     
@@ -105,14 +114,31 @@ class PatientInformationVC: UIViewController, UITextFieldDelegate {
         toolbar.setItems([doneBtn], animated: true)
         // toolbar.isUserInteractionEnabled = true
         
-     
+        
+        let toolbar2 = UIToolbar()
+               toolbar2.sizeToFit()
+               
+              
+               let doneBtn2 = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(self.donePressed2))
+               toolbar2.setItems([doneBtn2], animated: true)
+               // toolbar.isUserInteractionEnabled = true
+               
+        
         birthDateTextField.inputAccessoryView = toolbar
+        areaTextField.inputAccessoryView = toolbar2
+        genderTextField.inputAccessoryView = toolbar2
+        governorateTextField.inputAccessoryView = toolbar2
+        bloodTypeTextField.inputAccessoryView = toolbar2
         
         //assign date picker to the text field
         birthDateTextField.inputView = datePicker
         
     }
     
+    
+    @objc func donePressed2(){
+         self.view.endEditing(true)
+    }
     @objc func donePressed(){
         
         let formatter = DateFormatter()
@@ -188,6 +214,8 @@ extension PatientInformationVC: UIPickerViewDataSource, UIPickerViewDelegate{
             return gender.count
         case 3:
             return governorate.count
+        case 4:
+            return governentDic[governorateTextField.text!]!.count
         default:
             return 1
         }
@@ -200,6 +228,8 @@ extension PatientInformationVC: UIPickerViewDataSource, UIPickerViewDelegate{
             return gender[row]
         case 3:
             return governorate[row]
+        case 4:
+            return governentDic[governorateTextField.text!]?[row] ?? ""
             
         default:
             return "Data not found"
@@ -211,25 +241,26 @@ extension PatientInformationVC: UIPickerViewDataSource, UIPickerViewDelegate{
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
         
-        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(self.donePressed))
-        toolbar.setItems([doneBtn], animated: true)
+        
         
         switch pickerView.tag {
         case 1:
             bloodTypeTextField.text = bloodType[row]
-            bloodTypeTextField.inputAccessoryView = toolbar
+//            bloodTypeTextField.inputAccessoryView = toolbar
             
             //bloodTypeTextField.resignFirstResponder()
             
         case 2:
             genderTextField.text = gender[row]
-            genderTextField.inputAccessoryView = toolbar
+//            genderTextField.inputAccessoryView = toolbar
             
         //genderTextField.resignFirstResponder()
         case 3:
             governorateTextField.text = governorate[row]
-            governorateTextField.inputAccessoryView = toolbar
+//            governorateTextField.inputAccessoryView = toolbar
             
+        case 4:
+            areaTextField.text = governentDic[governorateTextField.text!]?[row] ?? ""
             //governorateTextField.resignFirstResponder()
             
             
