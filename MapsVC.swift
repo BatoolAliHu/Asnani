@@ -7,15 +7,26 @@
 //
 
 import UIKit
-
+import MapKit
 class MapsVC: UIViewController {
 
+    @IBOutlet weak var maoView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        hajiHaiderHospital()
     }
     
+    func hajiHaiderHospital(){
+        let annontation = MKPointAnnotation()
+        annontation.coordinate = CLLocationCoordinate2D(latitude: 29.3160753, longitude: 48.0328525)
+        annontation.title = "مركز محمود حجي حيدر"
+        annontation.subtitle = "طوارئ محافظة حولي"
+        maoView.addAnnotation(annontation)
+        
+        let region = MKCoordinateRegion(center: annontation.coordinate, latitudinalMeters: 100, longitudinalMeters: 100)
+        maoView.setRegion(region, animated: true)
+    }
 
     /*
     // MARK: - Navigation
