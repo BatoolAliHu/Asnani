@@ -19,36 +19,37 @@ class ScheduleVC: UIViewController {
     
     @IBAction func addAppointmentBtn(_ sender: Any) {
         let appointmentStore: EKEventStore = EKEventStore()
-        
-        appointmentStore.requestAccess(to: .event)  {(granted, error) in
-            if (granted)  &&  (error == nil)
-            {
-                print("granted \(granted)")
-                print("error \(error)")
-                let appointment:EKEvent = EKEvent(eventStore: appointmentStore)
-                appointment.title = "add appointment testing title"
-                appointment.startDate = Date()
-                appointment.endDate = Date()
-                appointment.notes = "This is note"
-                appointment.calendar = appointmentStore.defaultCalendarForNewEvents
-                do{
-                    try appointmentStore.save(appointment, span: .thisEvent)
-                }catch let error as NSError{
+        DispatchQueue.main.async() {
+            appointmentStore.requestAccess(to: .event)  {(granted, error) in
+                if (granted)  &&  (error == nil)
+                {
+                    print("granted \(granted)")
+                    print("error \(error)")
+                    let appointment:EKEvent = EKEvent(eventStore: appointmentStore)
+                    appointment.title = "add appointment testing title"
+                    appointment.startDate = Date()
+                    appointment.endDate = Date()
+                    appointment.notes = "This is note"
+                    appointment.calendar = appointmentStore.defaultCalendarForNewEvents
+                    do{
+                        try appointmentStore.save(appointment, span: .thisEvent)
+                    }catch let error as NSError{
+                        print("error : \(error)")
+                    }
+                    print("save appointment")
+                    
+                }else{
                     print("error : \(error)")
                 }
-                print("save appointment")
                 
-            }else{
-                print("error : \(error)")
             }
+            
+            
             
         }
         
         
-        
     }
-    
-    
 }
 
 /*
