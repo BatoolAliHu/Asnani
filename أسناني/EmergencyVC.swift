@@ -10,12 +10,25 @@ import UIKit
 
 class EmergencyVC: UIViewController {
 
-    var tag: Int = 0
+    var tag: Int = 0 // map or hospitals (3/4)
     var hospital: [String] = []
     let segues = [
         3: "map",
         4: "hospital"
     ]
+    
+      let emergencyHospitals = [
+        "Hawali" : [
+            "Mubarak",
+            "Mubarak extension"
+        ],
+        "Alahmdi" : [
+            "Adan",
+            "Adan extension"
+        ],
+        
+    ]
+     
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +44,7 @@ class EmergencyVC: UIViewController {
     
     @IBAction func ifTapped(_ sender: UIButton) {
         if tag == 3{
+            /*
             switch sender.tag {
             case 0:
                 hospital = ["الاحقاقي","حمد الصقر"]
@@ -39,9 +53,12 @@ class EmergencyVC: UIViewController {
             case 2:
                 hospital = ["hgrndk","hgrwmn"]
             default:
-                break
-            }
-            performSegue(withIdentifier: "map", sender: nil)
+             break
+             }
+             */
+//            hospital = emergencyHospitals[sender.titleLabe!.text!]!
+//            performSegue(withIdentifier: "map", sender: nil)
+           
             
         }
         let segueName = segues[tag]
